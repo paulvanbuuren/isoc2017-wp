@@ -22,3 +22,6 @@ Thumbs.db
 
 # ignore large folders
 node_modules
+
+# ignore PHPstorm files
+.idea/
