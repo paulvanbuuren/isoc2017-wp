@@ -79,6 +79,9 @@ function od_get_id_by_slug( $object_slug ) {
  */
 function od_slug_exists( $slug ) {
 	global $wpdb;
-	if( $wpdb->get_row("SELECT post_name FROM od_posts WHERE post_name = '".$slug."'", 'ARRAY_A') ) { return TRUE; }
-	else { return FALSE; }
+	if ( $wpdb->get_row( "SELECT post_name FROM $wpdb->posts WHERE post_name = '" . sanitize_title( $slug ) . "'", 'ARRAY_A' ) ) {
+		return true;
+	} else {
+		return false;
+	}
 }

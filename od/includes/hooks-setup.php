@@ -66,7 +66,7 @@ function od_create_page( $sPageTitle, $iMenuOrder = NULL, $sPageContent = NULL )
 	// early exit - slug exists
 	if( od_slug_exists($sPageSlug) ) {
 		global $wpdb;
-		$oPost = $wpdb->get_row("SELECT post_name FROM od_posts WHERE post_name = '".$sPageSlug."'");
+		$oPost = $wpdb->get_row( "SELECT post_name FROM $wpdb->posts WHERE post_name = '" . sanitize_title( $sPageSlug ) . "'" );
 		// we've got ourselves a page
 		if( $oPost->post_type == 'page' ) { return $oPost->ID; }
 		// not a page, better create one then
