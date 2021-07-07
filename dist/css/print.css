@@ -7,19 +7,13 @@
 	+31 (0)20 320 78 70
 
 ==============================================================================*/
-
 /* ============================================================================= 
 	STYLES FOR PRINT-CONTENT 
 ============================================================================= */
-
-/* line 15, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 * {
   overflow: visible !important;
   /* Required for FireFox pre-3.6 to print past page 1 */
 }
-
-/* line 19, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 body * {
   border: 0;
@@ -33,13 +27,9 @@ body * {
   /* Required for FireFox pre-3.6 to print past page 1 */
 }
 
-/* line 30, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 body {
   padding: 30pt 50pt 40pt 50pt;
 }
-
-/* line 34, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 body,
 input,
@@ -48,13 +38,9 @@ select {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* line 41, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 a.skipmenu {
   display: none;
 }
-
-/* line 45, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 h1 {
   font-style: normal;
@@ -65,8 +51,6 @@ h1 {
   margin: 0 0 6pt 0;
 }
 
-/* line 54, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 h2 {
   font-style: normal;
   font-weight: normal;
@@ -75,8 +59,6 @@ h2 {
   line-height: 20pt;
   margin: 0 0 3pt 0;
 }
-
-/* line 63, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 h3,
 h4,
@@ -90,16 +72,12 @@ h6 {
   margin: 0 0 0 0;
 }
 
-/* line 75, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 h4,
 h5,
 h6 {
   font-weight: bold;
   font-size: 10pt;
 }
-
-/* line 82, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 a,
 a:link,
@@ -108,8 +86,6 @@ a:hover {
   color: #000;
   text-decoration: underline;
 }
-
-/* line 90, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 h1,
 h2,
@@ -121,8 +97,6 @@ legend {
   page-break-after: avoid;
 }
 
-/* line 100, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 table tr,
 ul,
 ol,
@@ -130,49 +104,35 @@ img {
   page-break-inside: avoid;
 }
 
-/* line 107, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 img {
   max-width: 100%;
   height: auto;
   margin-bottom: 30pt;
 }
 
-/* line 114, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 article a {
   font-weight: bolder;
   text-decoration: none;
 }
-
-/* line 119, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 article a[href^=mailto]:after,
 article a[href^=http]:after {
   content: " <" attr(href) "> ";
 }
 
-/* line 124, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 article a[href^="#"]:after {
   content: "";
 }
-
-/* line 129, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 * {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 
-/* line 135, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
-
 nav,
 .site-footer {
   display: none;
 }
-
-/* line 140, /Users/occhiobv/Development/isoc.nl/wp-content/themes/isoc/src/sass/print.scss */
 
 .page {
   height: auto;
