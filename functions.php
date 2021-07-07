@@ -77,7 +77,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
  * Enqueue styles
  */
 add_action( 'wp_enqueue_scripts', function(){
-	wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/dist/css/app.min.css', '', getLastCssModified(), 'screen' ); // main style
+	wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/dist/css/app.css', '', getLastCssModified(), 'screen' ); // main style
 	wp_enqueue_style( 'print', get_stylesheet_directory_uri() . '/dist/css/print.css', '', getLastCssModified(), 'print' ); // print style
 
 /**
