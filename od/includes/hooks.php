@@ -21,13 +21,10 @@ EOHTML;
 /* ------------------------------------ */
 function od_embed_html( $html, $url, $attr ) {
 
-	// ugly version load oembed class
-	require_once('wp-includes/class-oembed.php');
-
 	// slow process to check data type
 	$oEmbed   = new WP_oEmbed();
-	$provider = $oEmbed->get_provider( $url, $args );
-	$data     = $oEmbed->fetch( $provider, $url, $args );
+	$provider = $oEmbed->get_provider( $url, $attr );
+	$data     = $oEmbed->fetch( $provider, $url, $attr );
 
 	// if type is video
 	if( $data->type == 'video' ) {
@@ -182,7 +179,7 @@ add_filter( 'login_headerurl', function() { ?>
 <?php
 });
 
-/* Change the admin footer 
+/* Change the admin footer
 /* ------------------------------------ */
 add_filter( 'admin_footer_text', function() {
 	echo '<span id="footer-thankyou">'.__('The template of this website is made available', 'od').' <a href="https://github.com/InternetSocietyChapters/isoc2017-wp" target="_blank">open source</a>.</span>';
