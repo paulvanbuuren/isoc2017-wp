@@ -23,6 +23,20 @@ There are more than 10 chapters working with the template and if you would like 
 
 If you are using the theme and would like to have your site listed as an example, please email voorzitter at isoc.nl
 
+## About this version
+
+This theme has been tested and found working with PHP versions 7.4 and 8.0.
+
+Tested with PHP versions:
+- 8.0.8
+- 7.4.21
+- 7.3.29 (not recommended)
+
+Tested with WordPress versions:
+- 5.7.3
+- 5.7.2
+- 5.7.1
+
 ------------------------------------------------------------------------
 
 Hosting
